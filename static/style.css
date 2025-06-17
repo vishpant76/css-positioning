@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box-2 {
+  position: static;
+  top: 10px;
+  left: 10px;
+  border: 1px solid black;
+  background-color: mediumpurple;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  align-self: center;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+/*
+Static positioning is the default value for the position property. That is the elements on the page appear in the order expected by normal flow. The placement properties top, left, bottom and right do not affect an element that has position: static.
+
+It can often be useful to set the position property to static even though it is the default value. An example of when you might want to do this is when you want to override a position value you have set elsewhere.
+
+Let’s look at an example to see that position static has no effect on the element with this property.
+
+Did you see that even though we have used the position property and the placement values that it has no effect on the element? You now know that the static value is the default and that the placement values do not affect elements with position: static.
+*/

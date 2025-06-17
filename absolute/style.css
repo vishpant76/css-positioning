@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.box-2 {
+  /* position: static; */
+  /* position: relative; */
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  border: 1px solid red;
+  background-color: mediumpurple;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  align-self: center;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.box-original {
+  border: 6px solid yellow;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.parent-box {
+  border: 8px solid purple;
+  position: relative;
+}
+
+/*
+Absolute positioned elements are removed from the normal document flow, and the space that the element was originally occupying is no longer reserved for that element. I like to remember it by saying it is ‘absolutely not there’.
+
+When the element is given position: absolute all other elements behave as if that element is no longer in the document. Therefore, there is no space reserved for that element in the page layout. This can then be a really powerful tool for moving HTML elements around.
+
+An important point and something that stumped me when I was learning is that an element with position: absolute is positioned relative to its closest positional ancestor. What this means is that for absolute positioning to work, the parent element must have a position property value other than the default of static.
+
+This is a crucial point to take note of, because if the closest parent element does not have a position property, the element with the absolute position will position relative to the next parent element that has a position property value. If there is no element with a position property value the element will be positioned relative to the html or viewport element. Not knowing this is what can cause so much pain when trying to position elements in the document.
+
+We can move the absolute positioned element around just like any other CSS position property by using the placement properties. Using the top, left, bottom and right properties, you determine where the element will be placed relative to the first parent element in the hierarchy that has a position property other than the default position: static.
+
+Let's get back to our example. We are now going to change the position property of the second box element to position: absolute. Before we look at the change and the result, check the previous pen to see what the position of the parent-box element is.
+*/

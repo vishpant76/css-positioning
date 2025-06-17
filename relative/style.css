@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box-2 {
+  /* position: static; */
+  position: relative;
+  top: 30px;
+  left: 60px;
+  border: 1px solid red;
+  background-color: mediumpurple;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  align-self: center;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+/*
+Relative position means that an element is positioned relative to its original position in the normal flow. By setting an element to just have position: relative nothing will happen. We will need to use the placement properties to change how the element is positioned relative to its original position.
+
+Basically when you set a HTML element to position: relative, it will remain in the flow of the layout. But, by using the placement properties you can move the element around. Let’s look at an example to cement your understanding of the relative position.
+
+We are going to replace the position: static with position: relative.
+
+You can see that the purple square element has been positioned relative to where it was initially positioned. In the example above it is 10px from the top and 10px from left of where it was originally meant to be positioned in the normal flow. However, the element remains in the normal flow of the document and the offset is applied relative to its original position. Make sure to remember this as we move on to the other position values.
+*/
